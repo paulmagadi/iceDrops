@@ -1,0 +1,107 @@
+[
+    {
+        "category": "iceCakes",
+        "class": "f1",
+        "image": "images/products/p1.webp",
+        "name": "Vanilla Bean Bliss",
+        "price": "Ksh200.00"
+    },
+    {
+        "category": "iceBars",
+        "class": "f2",
+        "image": "images/products/p2.png",
+        "name": "Mint Chocolate Crunch",
+        "price": "Ksh180.00"
+    },
+    {
+        "category": "creamCones",
+        "class": "f3",
+        "image": "images/products/p3.webp",
+        "name": "Salted Caramel Swirl",
+        "price": "Ksh220.00"
+    },
+    {
+        "category": "iceCakes",
+        "class": "f1",
+        "image": "images/products/p4.webp",
+        "name": "Strawberry Dream",
+        "price": "Ksh250.00"
+    },
+    {
+        "category": "iceBars",
+        "class": "f2",
+        "image": "images/products/p5.webp",
+        "name": "Cookies & Cream Delight",
+        "price": "Ksh190.00"
+    },
+    {
+        "category": "creamCones",
+        "class": "f3",
+        "image": "images/products/p6.webp",
+        "name": "Mango Passion Twist",
+        "price": "Ksh210.00"
+    },
+    {
+        "category": "iceCakes",
+        "class": "f1",
+        "image": "images/products/p7.webp",
+        "name": "Red Velvet Surprise",
+        "price": "Ksh260.00"
+    },
+    {
+        "category": "iceBars",
+        "class": "f2",
+        "image": "images/products/p8.png",
+        "name": "Blueberry Bliss Bar",
+        "price": "Ksh200.00"
+    },
+    {
+        "category": "creamCones",
+        "class": "f3",
+        "image": "images/products/p9.webp",
+        "name": "Peanut Butter Heaven",
+        "price": "Ksh230.00"
+    },
+    {
+        "category": "iceCakes",
+        "class": "f1",
+        "image": "images/products/p10.webp",
+        "name": "Lemon Zest Frost",
+        "price": "Ksh240.00"
+    },
+    {
+        "category": "iceBars",
+        "class": "f2",
+        "image": "images/products/p11.webp",
+        "name": "Pistachio Crunch Bar",
+        "price": "Ksh210.00"
+    },
+    {
+        "category": "creamCones",
+        "class": "f3",
+        "image": "images/products/p12.webp",
+        "name": "Raspberry Ripple Cone",
+        "price": "Ksh220.00"
+    },
+    {
+        "category": "iceCakes",
+        "class": "f1",
+        "image": "images/products/p13.webp",
+        "name": "Coconut Paradise",
+        "price": "Ksh250.00"
+    },
+    {
+        "category": "iceBars",
+        "class": "f2",
+        "image": "images/products/p14.jpg",
+        "name": "Dark Chocolate Delight",
+        "price": "Ksh230.00"
+    },
+    {
+        "category": "creamCones",
+        "class": "f3",
+        "image": "images/products/p15.webp",
+        "name": "Cherry Bomb Cone",
+        "price": "Ksh240.00"
+    }
+]

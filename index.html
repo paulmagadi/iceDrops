@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceDrops | Ice cream website</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="iceDrops" title="iceDrops">
+                    </a>
+                </div>
+
+                <nav class="navbar navbar-desktop">
+                    <ul>
+                        <li class="menu active-nav"><a href="#home">Home</a></li>
+                        <li class="menu"><a href="#flavours">Flavours</a></li>
+                        <li class="menu"><a href="#services">Services</a></li>
+                        <li class="menu"><a href="#testimonials">Testimonials</a></li>
+                        <li class="menu"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="cart">
+                    <p><a href="#" title="Cart"><i class="ri-shopping-cart-fill"></i></a></p>
+                </div>
+
+                <div class="toggle-menu">
+                    <i class="ri-menu-fill"></i>
+                </div>
+            </div>
+            <nav class="navbar mobile-navbar">
+                <ul>
+                    <li class="menu active-nav"><a href="#home">Home</a></li>
+                    <li class="menu"><a href="#flavours">Flavours</a></li>
+                    <li class="menu"><a href="#services">Services</a></li>
+                    <li class="menu"><a href="#testimonials">Testimonials</a></li>
+                    <li class="menu"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero-section" id="home">
+            <div class="hero-description">
+                <h2>Unique Artisan <span>Ice Cream</span> in Seasonal Flavours</h2>
+                <p>We craft our artisan ice cream using simple ingredients to create the most special flavours.</p> <br>
+                <p>Indulge in handcrafted artisan ice cream made with simple, high-quality ingredients. We offer unique, seasonal flavors and some of the sweetest scoops in town — a treat for every taste bud!</p>
+                <button type="button"><a href="#flavours">ORDER NOW</a></button>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-image">
+                    <img src="images/slides/sd5.png" alt="">
+                </div>
+                <div class="hero-image">
+                    <img src="images/slides/sd3.png" alt="">
+                </div>
+                <div class="hero-image">
+                    <img src="images/slides/sd1.png" alt="">
+                </div>
+                <div class="hero-image">
+                    <img src="images/slides/sd2.png" alt="">
+                </div>
+                <div class="hero-image">
+                    <img src="images/slides/sd4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="flavours-section" id="flavours">
+            <h2 class="heading">Our Flavours</h2>
+            <div class="flavour-menu-container">
+
+                <p class="flavour-menu" data-category="AllFlavours" title="View All Flavours">All</p>
+                <p class="flavour-menu" data-category="iceCakes" title="View Flavours">Ice Cakes</p>
+                <p class="flavour-menu" data-category="iceBars" title="View Flavours">Ice bars</p>
+                <p class="flavour-menu" data-category="creamCones" title="View Flavours">Cream cones</p>
+            </div>
+            <div class="flovours-container">
+                <!-- THIS PART IS GENERATED WITH JAVASCRIPT  -->
+
+                <!-- <div class="flavour-box f1">
+                    <div class="flavour-image"><a href="#"><img src="images/p1.webp" alt=""></a></div>
+                    <p class="flavour-name">Vanilla Milkshake</p>
+                    <div class="price-cart">
+                        <span class="price">Ksh200.00</span>
+                        <button type="button" class="add-to-cart"><a href="#">Add to cart</a></button>
+                    </div>
+                </div>
+                <div class="flavour-box f1">
+                    <div class="flavour-image"><a href="#"><img src="images/p2.png" alt=""></a></div>
+                    <p class="flavour-name">Vanilla Milkshake</p>
+                    <div class="price-cart">
+                        <span class="price">Ksh200.00</span>
+                        <button type="button" class="add-to-cart"><a href="#">Add to cart</a></button>
+                    </div>
+                </div>
+                <div class="flavour-box f3">
+                    <div class="flavour-image"><a href="#"><img src="images/p3.webp" alt=""></a></div>
+                    <p class="flavour-name">Vanilla Milkshake</p>
+                    <div class="price-cart">
+                        <span class="price">Ksh200.00</span>
+                        <button type="button" class="add-to-cart"><a href="#">Add to cart</a></button>
+                    </div>
+                </div>
+                <div class="flavour-box f2">
+                    <div class="flavour-image"><a href="#"><img src="images/p4.webp" alt=""></a></div>
+                    <p class="flavour-name">Vanilla Milkshake</p>
+                    <div class="price-cart">
+                        <span class="price">Ksh200.00</span>
+                        <button type="button" class="add-to-cart"><a href="#">Add to cart</a></button>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn" id="prevBtn">Previous</button>
+                <button class="pagination-btn" id="nextBtn">Next</button>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <h2 class="heading">We offer...</h2>
+            <div class="services-container">
+                <div class="service">
+                    <div class="service-image"><img src="images/healthy-food.png" alt=""></div>
+                    <p>Fresh & Natural Ingredients</p>
+                </div>
+                <div class="service">
+                    <div class="service-image"><img src="images/food-delivery.png" alt=""></div>
+                    <p>Safe & Eco-friendly Packaging</p>
+                </div>
+                <div class="service">
+                    <div class="service-image"><img src="images/fast-delivery.png" alt=""></div>
+                    <p>Free & Fast Delivery</p>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="city"></div>
+                <div class="road"></div>
+                <div class="delivery-boy">
+                    <img src="images/delivery.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h1 class="heading">Words from our <span>customers</span></h1>
+            <div class="testimonials-scroll-wrapper">
+                <span class="scroll scroll-left">&LeftAngleBracket;</span>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <img src="images/customers/c1.jpg" alt="Daniel R.">
+                        <h4 class="customer-name">Daniel R.</h4>
+                        <blockquote class="customer-review">
+                            "I’m obsessed with this place! The ice cream is incredibly creamy, and the staff is always friendly. The artisan touch makes every scoop feel extra special." — Daniel R.
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <img src="images/customers/c2.png" alt="Sarah M.">
+                        <h4 class="customer-name">Sarah M.</h4>
+                        <blockquote class="customer-review">
+                            "Absolutely the best ice cream in town! The flavors are so unique, and you can really taste the quality ingredients. I can't get enough of the seasonal specials!" — Sarah M.
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <img src="images/customers/c3.jpg" alt="Michael B.">
+                        <h4 class="customer-name">Michael B.</h4>
+                        <blockquote class="customer-review">
+                            "I’ve tried a lot of ice cream shops, but nothing compares to this one. The texture, the taste, the creativity — it’s all amazing. Highly recommend the seasonal flavors!" — Michael B.
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <img src="images/customers/c4.png" alt="Jessica T.">
+                        <h4 class="customer-name">Jessica T.</h4>
+                        <blockquote class="customer-review">"I brought my kids here, and now they beg to come back every weekend. The atmosphere is lovely, and the ice cream is pure magic." — Jessica T.
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <img src="images/customers/c5.jpg" alt="Chloe W.">
+                        <h4 class="customer-name">Chloe W.</h4>
+                        <blockquote class="customer-review">"This store is a hidden gem! The ice cream is so fresh and flavorful, and you can tell it’s made with love. I’m already planning my next visit." — Chloe W.
+                        </blockquote>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <img src="images/customers/c6.jpg" alt="Emily L.">
+                        <h4 class="customer-name">Emily L.</h4>
+                        <blockquote class="customer-review">"From the first bite, I knew this would be my go-to spot. The flavors are rich and perfectly balanced, and they’re always introducing new, exciting options!" — Emily L.
+
+                        </blockquote>
+                    </div>
+
+                </div>
+
+                <span class="scroll scroll-right">&RightAngleBracket;</span>
+            </div>
+        </section>
+
+        <section class="cantact-section" id="contact">
+            <h2 class="heading">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" placeholder="Enter Name" required>
+                        <input type="email" placeholder="Enter Email" required>
+                        <input type="text" placeholder="Enter Phone Number" required>
+                        <textarea name="message" id="message" rows="2" placeholder="Enter Message"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p title="Call Us"><i class="ri-phone-fill"></i> +254777777777</p>
+                        <p title="Email Us"><i class="ri-mail-fill"></i>icedropskenya@gmail.com</p>
+                        <p title="WhatsApp Us"><i class="ri-whatsapp-fill"></i>+254022201111</p>
+                        <p title="Our Location"><i class="ri-map-pin-fill"></i>Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <p>We have the best Ice creams in town. We use fresh, natural and healthy ingredients to produce our
+                        ice creams.</p> <br>
+                    <br>
+                    <p>Find us on our social media pages</p>
+                    <div class="socials">
+                        <p><a href="#" title="Facebook"><i class="ri-facebook-circle-fill"></i></a></p>
+                        <p><a href="#" title="Instagram"><i class="ri-instagram-fill"></i></a></p>
+                        <p><a href="#" title="X-twitter"><i class="ri-twitter-x-fill"></i></a></p>
+                        <p><a href="#" title="YouTube"><i class="ri-youtube-fill"></i></a></p>
+                    </div>
+                </div>
+                <div class="footer-column footer-links">
+                    <h2>Links</h2>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#flavours">Flavours</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="#testimonials">Testimonials</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div class="footer-column newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Don't miss out on latest deals! Subscribe now to receive exclusive discounts and updates on our
+                        latest ice cream flavors and special offers.</p>
+                    <form action="">
+                        <input type="email" placeholder="ENTER YOUR EMAIL">
+                        <input type="submit" value="SUBSCRIBE">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="foot">
+                <p>Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. <br> Designed and
+                    Developed by <a href="https://github.com/paulmagadi" title="Visit Us">SQ PROGRAMMING</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
