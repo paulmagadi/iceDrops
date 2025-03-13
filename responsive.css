@@ -226,7 +226,7 @@
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 300px) {
     .logo img {
         width: 5rem;
     }
