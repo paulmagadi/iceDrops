@@ -389,13 +389,14 @@ a {
     font-weight: 600;
 }
 
-.pagination {
-    text-align: center;
-    margin-top: 20px;
+.products-view-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 20px auto;
 }
 
-.pagination button {
-    margin: 0 5px;
+.view-btn {
     cursor: pointer;
     border: 1px solid var(--primary-color);
     background-color: var(--tertiary-2-color);
@@ -406,9 +407,6 @@ a {
     text-transform: uppercase;
 }
 
-.pagination button:disabled {
-    border-color: initial;
-}
 
 .services-section {
     background-color: var(--tertiary-color);

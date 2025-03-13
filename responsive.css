@@ -129,6 +129,14 @@
 
 
 @media (max-width: 680px) {
+    .hero-section {
+        padding: 4em 1em 2em 1em;
+    }
+
+    .header {
+        padding: .5em 1em;
+    }
+
     .logo img {
         width: 6rem;
     }
