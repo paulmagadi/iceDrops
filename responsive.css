@@ -31,19 +31,6 @@
         font-size: 2rem;
     }
 
-    .heading {
-        padding: .5em 0;
-        font-size: 2rem;
-    }
-
-    .heading::before {
-        translate: -8rem 0;
-    }
-
-    .heading::after {
-        translate: 8rem 0;
-    }
-
     .flavours-section {
         padding: 2em 1em;
     }
@@ -101,6 +88,14 @@
         opacity: 0.8;
     }
 
+    .heading {
+        gap: 1.5em;
+    }
+    
+    .heading span {
+        width: 3.5rem;
+    }
+
     .footer {
         font-size: 1.1rem;
         padding: 1em 1em;
@@ -147,17 +142,13 @@
         font-family: "Roboto Condensed", sans-serif;
     }
 
-    .heading::before,
-    .heading::after {
-        width: 3.5rem;
+    .heading {
+        gap: 1.2em;
+        font-size: 1rem;
     }
-
-    .heading::before {
-        translate: -5rem 0;
-    }
-
-    .heading::after {
-        translate: 5rem 0;
+    
+    .heading span {
+        width: 3rem;
     }
 
     .flavour-box {
@@ -214,8 +205,7 @@
         font-family: "Roboto Condensed", sans-serif;
     }
 
-    .heading::before,
-    .heading::after {
+    .heading span {
         display: none;
     }
 
