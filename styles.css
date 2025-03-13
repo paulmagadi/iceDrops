@@ -37,6 +37,7 @@ body {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
+    box-shadow: 1px 1px 4px var(--shadow-color);
 }
 
 a {
