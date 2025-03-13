@@ -29,7 +29,8 @@ function renderFlavours(data) {
                 <p class="flavour-name">${item.name}</p>
                 <div class="price-cart">
                     <span class="price">${item.price}</span>
-                    <button type="button" class="add-to-cart" title="ADD TO CART"><a href="#.">Add to cart</a></button>
+                    <button type="button" class="add-to-cart add-to-cart-text" title="ADD TO CART"><a href="#.">Add to cart</a></button>
+                    <button type="button" class="add-to-cart add-to-cart-icon" title="ADD TO CART"><a href="#."><i class="ri-shopping-cart-fill"></i></a></button>
                 </div>
             </div>
         `;

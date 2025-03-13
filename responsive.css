@@ -39,6 +39,10 @@
         width: 31%;
     }
 
+    .flavour-name {
+        font-size: 1.2rem;
+    }
+
     .testimonials-section {
         padding: 2em .5em;
     }
@@ -138,8 +142,10 @@
 
     .hero-description h2 {
         font-size: 1.5rem;
-        padding: .5em 0;
-        font-family: "Roboto Condensed", sans-serif;
+    }
+    
+    .hero-description p {
+        font-size: 1rem;
     }
 
     .heading {
@@ -152,7 +158,8 @@
     }
 
     .flavour-menu-container {
-        gap: .5em;
+        gap: .3em;
+        margin-bottom: 1em;
     }
 
     .flavour-menu {
@@ -170,7 +177,7 @@
 
     .flavour-name {
         font-size: 1rem;
-        padding: .5em;
+        padding: .3em;
     }
 
     .price-cart {
@@ -226,7 +233,35 @@
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
+    .flavour-menu-container {
+        gap: .2em;
+        margin-bottom: 1em;
+    }
+
+    .flavour-menu {
+        padding: .6em 0.4em;
+        font-size: 0.8rem;
+    }
+
+    .flavour-box {
+        width: 47%; 
+    }
+
+    .price-cart .add-to-cart-text {
+        display: none;
+    }
+
+    .price-cart .add-to-cart-icon {
+        display: flex;
+        padding: .5em 1em;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 320px) {
     .logo img {
         width: 5rem;
     }
@@ -239,11 +274,6 @@
 
     .heading span {
         display: none;
-    }
-
-    .flavour-menu-container {
-        gap: .5em;
-        margin-bottom: 2em;
     }
 
     .flavour-menu {

@@ -295,7 +295,7 @@ a {
     isolation: isolate;
     overflow: hidden;
     border-radius: 6px;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     padding: .5em;
     box-shadow: 1px 1px 4px var(--shadow-color);
 }
@@ -365,6 +365,10 @@ a {
     color: var(--white-color);
     scale: 0.9;
     transition: 0.5s;
+}
+
+.price-cart .add-to-cart-icon {
+    display: none;
 }
 
 .price-cart .add-to-cart:hover {
