@@ -217,6 +217,14 @@
         animation: city-road 5s linear infinite;
     }
 
+    .testimonials-section {
+        padding: 2em .5em;
+    }
+    
+    .testimonials-scroll-wrapper {
+        padding: .5em;
+    }
+
     .scroll {
         display: none !important;
     }
