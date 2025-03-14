@@ -568,7 +568,19 @@ a {
     flex: 0 0 auto;
     width: 45%;
     scroll-snap-align: start;
-    padding: 1em;
+}
+
+.testimonial-card-wrapper:not(:first-child), 
+.testimonial-card-wrapper:not(:last-child) {
+    padding: 0 .5em;
+}
+
+.testimonial-card-wrapper:first-child {
+    padding-left: 1em;
+}
+
+.testimonial-card-wrapper:last-child {
+    padding-right: 1em;
 }
 
 .testimonial-card {
