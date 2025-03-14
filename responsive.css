@@ -43,20 +43,8 @@
         font-size: 1.2rem;
     }
 
-    .testimonials-section {
-        padding: 2em .5em;
-    }
-
-    .testimonials-scroll-wrapper {
-        padding: 1em .5em;
-    }
-
     .testimonials-container {
         gap: 1em;
-    }
-
-    .testimonial-card {
-        padding: .5em;
     }
 
 }
@@ -217,20 +205,15 @@
         animation: city-road 5s linear infinite;
     }
 
-    .testimonials-section {
-        padding: 2em .3em;
-    }
-    
-    .testimonials-scroll-wrapper {
-        padding: .3em;
-    }
-
     .scroll {
         display: none !important;
     }
 
+    .testimonial-card-wrapper {
+        padding: .5em;
+    }
+
     .testimonial-card {
-        flex: 0 0 auto;
         width: 90%;
     }
 
@@ -299,14 +282,6 @@
 
     .flavour-box {
         width: 100%;
-    }
-
-    .testimonials-section {
-        padding: 2em .3em;
-    }
-
-    .testimonials-scroll-wrapper {
-        padding: 1em .3em;
     }
 
     .testimonial-card {

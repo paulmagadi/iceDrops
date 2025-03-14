@@ -513,14 +513,14 @@ a {
 }
 
 .testimonials-section {
-    padding: 2em 1em;
+    padding: 1em 0;
     text-align: center;
     background-color: var(--tertiary-2-color);
 }
 
 .testimonials-scroll-wrapper {
     position: relative;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .testimonials-scroll-wrapper:hover .scroll {
@@ -552,10 +552,9 @@ a {
 .testimonials-container {
     width: 100%;
     display: flex;
-    gap: 2em;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 1em;
+    padding: 1em 0;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     position: relative;
@@ -565,18 +564,22 @@ a {
     display: none;
 }
 
-.testimonial-card {
+.testimonial-card-wrapper {
     flex: 0 0 auto;
     width: 45%;
     scroll-snap-align: start;
+    padding: 1em;
+}
+
+.testimonial-card {
     padding: .5em 1em;
     border-radius: 8px;
     background-color: var(--white-color);
     box-shadow: 1px 1px 4px var(--shadow-color);
-    transition: 0.3s;
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 .testimonial-card::before {
