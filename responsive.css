@@ -78,6 +78,7 @@
         display: flex;
     }
 
+
     .navbar-mobile ul li {
         display: block;
     }
@@ -157,8 +158,12 @@
         width: 3rem;
     }
 
+    .flavours-section {
+        padding: 1em .5em;
+    }
+
     .flavour-menu-container {
-        gap: .3em;
+        gap: 5px;
         margin-bottom: 1em;
     }
 
@@ -168,7 +173,7 @@
     }
 
     .active-flavour {
-        scale: 1;
+        scale: 1.05;
     }
 
     .flavour-box {
@@ -204,6 +209,14 @@
         padding: 1em 0;
     }
 
+    .city {
+        animation: city-road 7.5s linear infinite;
+    }
+
+    .road {
+        animation: city-road 5s linear infinite;
+    }
+
     .testimonial-card {
         flex: 0 0 auto;
         width: 90%;
@@ -234,18 +247,9 @@
 }
 
 @media (max-width: 400px) {
-    .flavour-menu-container {
-        gap: .2em;
-        margin-bottom: 1em;
-    }
-
     .flavour-menu {
         padding: .6em 0.4em;
         font-size: 0.8rem;
-    }
-
-    .flavour-box {
-        width: 47%; 
     }
 
     .price-cart .add-to-cart-text {
@@ -254,8 +258,7 @@
 
     .price-cart .add-to-cart-icon {
         display: flex;
-        padding: .5em 1em;
-        font-weight: 600;
+        padding: .2em .7em;
         font-size: 1.2rem;
     }
 

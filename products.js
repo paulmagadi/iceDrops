@@ -41,56 +41,62 @@ function renderFlavours(data) {
     initializeCategoriesAndViewMoreLess();
 }
 
-// Initialize categories and "View More/Less" functionality
+
 function initializeCategoriesAndViewMoreLess() {
     const flavourMenuItems = document.querySelectorAll('.flavour-menu');
     const viewMoreBtn = document.getElementById('viewMoreBtn');
     const viewLessBtn = document.getElementById('viewLessBtn');
 
     // Variables for "View More/Less" functionality
-    let itemsPerLoad = 4; 
-    let visibleItems = itemsPerLoad; 
+    let itemsPerLoad = 4;
+    let visibleItems = itemsPerLoad;
     let products = [];
+    let currentCategory = 'iceCakes'; // Track current category
 
-    // Define categories
     const flavourCategories = {
         iceCakes: document.querySelectorAll('.f1'),
         iceBars: document.querySelectorAll('.f2'),
         creamCones: document.querySelectorAll('.f3'),
     };
 
-    // Function to show products for a specific category
     function showflavours(category) {
+        currentCategory = category;
         if (category === 'AllFlavours') {
             products = Array.from(document.querySelectorAll('.flavour-box'));
         } else {
             products = Array.from(flavourCategories[category]);
         }
 
+        // Reset visible items when changing category
+        visibleItems = itemsPerLoad;
+        
+        // Hide all items first
         document.querySelectorAll('.flavour-box').forEach(item => item.style.display = 'none');
+        
+        // Show initial items
         products.slice(0, visibleItems).forEach(item => item.style.display = 'block');
 
-        // Update active class
+        // Update UI
         flavourMenuItems.forEach(menu => menu.classList.remove('active-flavour'));
         document.querySelector(`[data-category="${category}"]`).classList.add('active-flavour');
-
-        // Update button states
         updateButtonStates();
     }
 
-    // Function to load more items
     function loadMoreItems() {
-        visibleItems += itemsPerLoad;
+        visibleItems = Math.min(products.length, visibleItems + itemsPerLoad);
         products.slice(0, visibleItems).forEach(item => item.style.display = 'block');
-
         updateButtonStates();
     }
 
-    // Function to load fewer items
     function loadLessItems() {
+        // Ensure we don't go below initial load count
         visibleItems = Math.max(itemsPerLoad, visibleItems - itemsPerLoad);
-        products.slice(0, visibleItems).forEach(item => item.style.display = 'block');
-
+        
+        // Hide extra items
+        products.forEach((item, index) => {
+            item.style.display = index < visibleItems ? 'block' : 'none';
+        });
+        
         updateButtonStates();
     }
 
@@ -104,26 +110,22 @@ function initializeCategoriesAndViewMoreLess() {
         // Disable "View Less" button if only the initial set of items is visible
         viewLessBtn.disabled = visibleItems <= itemsPerLoad;
         viewLessBtn.style.cursor = viewLessBtn.disabled ? "not-allowed" : "pointer";
-        viewLessBtn.title = viewLessBtn.disabled ? "No items to hide" : "Hide items";
+        viewLessBtn.title = viewLessBtn.disabled ? "No items to hide" : "View less products";
 
         // Show/hide buttons based on the number of items [alternative]
         // viewMoreBtn.style.display = visibleItems >= products.length ? 'none' : 'block';
         // viewLessBtn.style.display = visibleItems > itemsPerLoad ? 'block' : 'none';
     }
 
-    // Event listeners for category menu items
+    // Event listeners
     flavourMenuItems.forEach(menu => {
         menu.addEventListener('click', () => {
             const category = menu.getAttribute('data-category');
-            visibleItems = itemsPerLoad; // Reset visible items when switching categories
             showflavours(category);
         });
     });
 
-    // Event listener for "View More" button
     viewMoreBtn.addEventListener('click', loadMoreItems);
-
-    // Event listener for "View Less" button
     viewLessBtn.addEventListener('click', loadLessItems);
 
     // Initial load
