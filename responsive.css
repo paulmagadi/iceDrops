@@ -217,6 +217,10 @@
         animation: city-road 5s linear infinite;
     }
 
+    .scroll {
+        display: none !important;
+    }
+
     .testimonial-card {
         flex: 0 0 auto;
         width: 90%;

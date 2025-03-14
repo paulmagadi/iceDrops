@@ -669,13 +669,6 @@ a {
     color: var(--primary-color);
 }
 
-.customer-role {
-    color: var(--dark-color);
-    font-family: "Lilita One", sans-serif;
-    padding: 0.5em 0;
-    margin-bottom: 1em;
-}
-
 .customer-card-image {
     width: 55%;
     max-width: 150px;
