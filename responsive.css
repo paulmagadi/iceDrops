@@ -209,6 +209,10 @@
         animation: city-road 5s linear infinite;
     }
 
+    .testimonials-container {
+        gap: .5em;
+    }
+
     .testimonial-card-wrapper {
         width: 90%;
     }
@@ -228,6 +232,10 @@
 
     .testimonial-card-wrapper:last-child {
         padding-right: .5em;
+    }
+
+    .ri-double-quotes-l {
+        font-size: 2rem;
     }
 
     .contact-container {
@@ -298,6 +306,6 @@
     }
 
     .testimonial-card-wrapper {
-        width: 98%;
+        width: 95%;
     }
 }

@@ -584,6 +584,7 @@ a {
 }
 
 .testimonial-card {
+    height: 100%;
     padding: .5em 1em;
     border-radius: 8px;
     background-color: var(--white-color);
