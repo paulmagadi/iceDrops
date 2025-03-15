@@ -66,9 +66,26 @@
         display: flex;
     }
 
-
     .navbar-mobile ul li {
         display: block;
+        width: 100%;
+    }
+
+    .navbar ul li:hover {
+        border-bottom: none;
+    }
+
+    .navbar ul li:hover a {
+        color: var(--primary-color);
+    }
+
+    .active-nav {
+        border-bottom: none;
+    }
+
+    .active-nav a {
+        border-bottom: none;
+        color: var(--primary-color);
     }
 
     .toggler-icon {
@@ -121,12 +138,12 @@
 
 
 @media (max-width: 680px) {
-    .hero-section {
-        padding: 4em 1em 2em 1em;
-    }
-
     .header {
         padding: .5em 1em;
+    }
+
+    .hero-section {
+        padding: 4em 1em 2em 1em;
     }
 
     .logo img {
