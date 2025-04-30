@@ -36,7 +36,7 @@ const activeHeader = function () {
 window.addEventListener("scroll", activeHeader);
 
 
-// Active Navigation
+// Get all the navigation buttons and sections
 const navBtns = document.querySelectorAll('.menu');
 const sections = document.querySelectorAll('section');
 

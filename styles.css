@@ -11,10 +11,10 @@
     --primary-color: rgb(255, 0, 191);
     --secondary-color: rgb(254, 162, 217);
     --tertiary-color: rgb(221, 254, 252);
-    --tertiary-2-color: rgb(250, 224, 197);
-    --background-color: rgb(226, 226, 226);
+    --tertiary-2-color: #fae0c5;
+    --background-color: #e2e2e2;
     --text-color: #00004d;
-    --white-color: rgb(255, 255, 255);
+    --white-color: #ffffff;
     --dark-color: rgb(54, 54, 54);
     --light-color: rgb(245, 235, 235);
     --shadow-color: rgba(0, 0, 0, 0.4);
@@ -52,7 +52,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     z-index: 100;
 }
 
